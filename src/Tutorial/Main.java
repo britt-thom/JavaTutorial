@@ -2,15 +2,12 @@ package Tutorial;
 
 public class Main {
     public static void main(String[] args) {
-        //primitive
-       int hello_world = 5;
-       double num2 = 5.0;
-       boolean b = false;
-       char c = 'h';
-       String str = "9";
+        int x = 5;
+        int y = 7;
+        double z = 57;
+        double u = x / (double)y;
+        //double d = Math.pow(x,y);
 
-       int tim = hello_world;
-       System.out.println(str);
-
+        System.out.println(u);
     }
 }
