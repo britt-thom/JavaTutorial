@@ -3,12 +3,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       int x = 6;
-       int y = 21;
-       int z = 10;
-        // > < == <= >= !=
-       boolean compare = x > y || z < y;
+      Scanner sc = new Scanner(System.in);
+      String s = sc.nextLine();
 
-       System.out.println(compare);
+      if (s.equals("tie")) {
+          System.out.println("You typed tie");
+      }
+      else if (s.equals("hello")) {
+          System.out.println("hi");
+      }
+      else {
+          System.out.println("Print");
+      }
     }
 }
