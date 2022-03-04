@@ -3,9 +3,9 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      OuterClass out = new OuterClass();
-      out.inner();
-
-      System.out.println();
+      Car ford = new Car();
+      ford.speedUp(10);
+      ford.changeGear(2);
+      ford.display();
     }
 }
