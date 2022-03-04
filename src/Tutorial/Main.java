@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-    int[] arr = {1,2,3,4,5};
-    String[] names = new String[5];
     Scanner sc = new Scanner(System.in);
+    System.out.print("Type a number: ");
+    int x = sc.nextInt();
 
-        for (int i = 0; i < names.length; i++) {
-            System.out.println("Input: ");
-            String input = sc.nextLine();
-            names[i] = input;
-        }
-        for (String n:names) {
-            System.out.println(n);
-        }
+    int count = 0;
+    while (x != 10) {
+        System.out.println("Type 10...");
+        System.out.print("Type a number: ");
+        x = sc.nextInt();
+        count++;
+    }
+    System.out.println("You tried " + count + "times");
     }
 }
