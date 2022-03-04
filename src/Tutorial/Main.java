@@ -3,14 +3,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String[] newArr = new String[5];
-        newArr[0] = "hello";
-        newArr[1] = "hi";
-        newArr[2] = "tim";
-        newArr[3] = "bill";
-        newArr[4] = "joe";
+    int[] arr = {1,2,3,4,5};
+    String[] names = new String[5];
+    Scanner sc = new Scanner(System.in);
 
-        String x = newArr[4];
-        System.out.println(x);
+        for (int i = 0; i < names.length; i++) {
+            System.out.println("Input: ");
+            String input = sc.nextLine();
+            names[i] = input;
+        }
+        for (String n:names) {
+            System.out.println(n);
+        }
     }
 }
