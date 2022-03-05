@@ -3,9 +3,10 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      Car ford = new Car();
-      ford.speedUp(10);
-      ford.changeGear(2);
-      ford.display();
+      Level lvl = Level.Low;
+
+      lvl.setLvlNum(5);
+      System.out.println(lvl.getLvlNum());
     }
+
 }
